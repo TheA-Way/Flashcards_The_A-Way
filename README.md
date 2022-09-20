@@ -6,7 +6,7 @@
 Flashcard app that reveals question or answer when screen is clicked.
 
 ### App Walk-though
-<img src=http://g.recordit.co/FNyKmbJ9Bu.gif" width=200><br>
+<img src="http://g.recordit.co/FNyKmbJ9Bu.gif" width=200><br>
 
 ## Required
 - [x] Create New Project in Android Studio
