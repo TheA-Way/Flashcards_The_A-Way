@@ -14,13 +14,24 @@
         android:text="What is Barack Obama's first name?"
         android:textSize="40sp"
         />
+
     <TextView
         android:id="@+id/Flashcard_Answer"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:gravity="center"
-        android:visibility="invisible"
         android:text="President."
         android:textSize="40sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/plusBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="38dp"
+        android:src="@drawable/ic_plus_svgrepo_com"
         />
 </RelativeLayout>

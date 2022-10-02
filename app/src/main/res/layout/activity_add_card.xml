@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCardActivity">
+
+
+    <ImageView
+        android:id="@+id/redxBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="38dp"
+        android:src="@drawable/ic_red_x_icon"
+        />
+
+    <ImageView
+        android:id="@+id/saveBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="38dp"
+        android:src="@drawable/ic_eo_circle_green_checkmark" />
+
+    <EditText
+        android:id="@+id/Front_entry"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:hint="Front"
+        />
+
+    <EditText
+        android:id="@+id/Back_entry"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/Front_entry"
+        android:layout_margin="20dp"
+        android:hint="Back"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
