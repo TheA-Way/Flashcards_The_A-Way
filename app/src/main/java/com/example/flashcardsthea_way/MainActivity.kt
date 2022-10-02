@@ -31,9 +31,15 @@ class MainActivity : AppCompatActivity() {
                 // Log the value of the strings for easier debugging
                 Log.i("MainActivity", "string1: $string1")
                 Log.i("MainActivity", "string2: $string2")
-            } else {
+
+                findViewById<TextView>(R.id.Flashcard_Question).text = string1
+                findViewById<TextView>(R.id.Flashcard_Answer).text = string2
+            }
+
+            else {
                 Log.i("MainActivity", "Returned null data from AddCardActivity")
             }
+
             Snackbar.make(findViewById(R.id.Flashcard_Question),
                 "card saved",
                 Snackbar.LENGTH_SHORT)
@@ -55,6 +61,9 @@ class MainActivity : AppCompatActivity() {
             // Launch EndingActivity with the resultLauncher so we can execute more code
             // once we come back here from EndingActivity
             resultLauncher.launch(intent)
+
+
         }
+
     }
 }
