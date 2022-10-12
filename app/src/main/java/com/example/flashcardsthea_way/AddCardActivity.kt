@@ -8,6 +8,7 @@ import android.widget.TextView
 import android.content.Intent
 import android.media.Image
 import android.widget.EditText
+import com.google.android.material.snackbar.Snackbar
 
 class AddCardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +21,12 @@ class AddCardActivity : AppCompatActivity() {
 
         //actions
         cancelBtn.setOnClickListener {
+           val data = Intent()
+            data.putExtra(
+                "status",
+                "card cancelled"
+            )
+            setResult(RESULT_OK, data) // set result code and bundle data for response
             finish()
         }
 
@@ -31,19 +38,32 @@ class AddCardActivity : AppCompatActivity() {
             val data = Intent() // create a new Intent, this is where we will put our data
 
             data.putExtra(
-                "string1",
+                "question",
                 fr
             ) // puts one string into the Intent, with the key as 'string1'
 
             data.putExtra(
-                "string2",
+                "answer",
                 bk
             ) // puts another string into the Intent, with the key as 'string2
+
+            if ((bk == "") && (fr == "")) {
+                data.putExtra(
+                    "status",
+                    "card empty"
+                )
+            }
+            else{
+
+                data.putExtra(
+                    "status",
+                    "card saved"
+                )
+            }
 
             setResult(RESULT_OK, data) // set result code and bundle data for response
 
             finish() // closes this activity and pass data to the original activity that launched this activity
-
         }
 
     }
