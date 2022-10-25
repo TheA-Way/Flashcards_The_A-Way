@@ -4,8 +4,8 @@
 ### App Description
 Flashcard app that reveals question or answer when screen is clicked, allows for the creation of new cards and saves responses, allows for traversing through created cards as well. Has sliding animations between cards and when a new card is created. Has reveal animations for answers.
 
-### App Walk-though
-<img src="http://g.recordit.co/OCql8NiPdM.gif" width=200><br>
+### App Walk-though (UPDATED)
+<img src="http://g.recordit.co/rcdvjIc0i6.gif" width=200><br>
 
 ## Required
 - [x] User sees a transition animation when going from the main screen to the add card screen.
